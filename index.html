@@ -14,53 +14,210 @@
   h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .4rem; }
   h2 { font-size: 1.2rem; margin: 2.2rem 0 .6rem; }
   hr { border: 0; border-top: 1px solid #e2e2ee; margin: 2rem 0; }
-  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .94rem; }
-  th, td { border: 1px solid #d8d8e6; padding: .5rem .6rem; text-align: left; vertical-align: top; }
-  th { background: #f3f3f9; }
-  code { background: #f3f3f9; padding: .1rem .3rem; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
   a { color: #2a6fcc; }
+  nav { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  nav button {
+    font: inherit; font-size: .95rem; padding: .4rem .9rem; border-radius: 999px;
+    border: 1px solid #d8d8e6; background: #f3f3f9; color: inherit; cursor: pointer;
+  }
+  nav button[aria-current="true"] { background: #2a6fcc; border-color: #2a6fcc; color: #fff; }
   @media (prefers-color-scheme: dark) {
     body { color: #e9e9f4; background: #16162c; }
-    th { background: #22224a; }
-    th, td { border-color: #33335e; }
-    code { background: #22224a; }
     hr { border-top-color: #33335e; }
     a { color: #7ab8ff; }
+    nav button { background: #22224a; border-color: #33335e; }
+    nav button[aria-current="true"] { background: #7ab8ff; border-color: #7ab8ff; color: #16162c; }
   }
 </style>
 </head>
 <body>
+<nav>
+  <button type="button" data-ir="es">Español</button>
+  <button type="button" data-ir="en">English</button>
+  <button type="button" data-ir="pt">Português</button>
+</nav>
+<article lang="es" data-idioma="es" hidden>
 <h1>Política de privacidad — Cavila</h1>
-<p><strong>Última actualización: 21 de julio de 2026</strong></p>
-<p>Cavila es una aplicación de acertijos para niños de 6 a 13 años. Esta política explica qué hace la app con la información. Está escrita para que la entienda un papá o una mamá, no un abogado.</p>
+<p><strong>Última actualización: 2026-08-16</strong></p>
+<p>Cavila es una aplicación de acertijos para niños desde los 6 años. Esta política explica qué hace la app con la información.</p>
 <hr>
 <h2>Lo corto</h2>
-<p><strong>Cavila no recopila ningún dato. Nada de lo que pasa dentro de la app sale del teléfono.</strong> No hay cuentas, no hay registro, no hay servidores nuestros, no hay publicidad y no hay analítica. La app funciona entera con el teléfono en modo avión, y esa no es una casualidad: es la razón por la que no hay nada que recopilar.</p>
+<p>Cavila no recopila ningún dato. Nada de lo que pasa dentro de la app sale del teléfono. No hay cuentas, no hay registro, no hay servidores nuestros, no hay publicidad y no hay analítica.</p>
+<p>La app funciona entera con el teléfono en modo avión, y esa no es una casualidad: es la razón por la que no hay nada que recopilar. Lo único que necesita red es la suscripción opcional, que cobra Google Play.</p>
 <hr>
 <h2>Qué se guarda, y dónde</h2>
-<p>Todo lo que la app guarda vive <strong>únicamente en el almacenamiento del propio teléfono</strong> y nunca se transmite:</p>
-<table><thead><tr><th>Qué</th><th>Para qué</th><th>Dónde vive</th></tr></thead><tbody><tr><td>El avance del juego: niveles, estrellas, monedas, racha, medallas</td><td>Para que el niño continúe donde quedó</td><td>Solo en el teléfono</td></tr><tr><td>El apodo y el emoji de cada perfil</td><td>Para distinguir a los hermanos que comparten el teléfono</td><td>Solo en el teléfono</td></tr><tr><td>La banda de edad (6-8, 9-10, 11-13), <strong>opcional</strong></td><td>Para ajustar la dificultad</td><td>Solo en el teléfono</td></tr><tr><td>Ajustes: sonido, narración, idioma, recordatorio</td><td>Preferencias</td><td>Solo en el teléfono</td></tr></tbody></table>
-<p><strong>El apodo lo escribe la familia y puede ser cualquier cosa.</strong> No pedimos nombre real, apellido, correo, teléfono, dirección, foto ni fecha de nacimiento exacta. Tampoco los necesitamos: no hay ninguna cuenta que crear.</p>
-<p><strong>Desinstalar la app borra todo esto</strong>, porque no hay copia en ninguna otra parte. Dentro de la app, la Zona de Papás también permite borrar el avance.</p>
+<p>Todo lo que la app guarda vive únicamente en el almacenamiento del propio teléfono y nunca se transmite:</p>
+<ul>
+<li>El avance del juego (niveles, estrellas, monedas, racha, medallas), para que el niño continúe donde quedó.</li>
+<li>El apodo y el emoji de cada perfil, para distinguir a los hermanos que comparten el teléfono.</li>
+<li>La banda de edad, que es opcional, para ajustar la dificultad.</li>
+<li>Los ajustes: sonido, narración, idioma y recordatorio.</li>
+</ul>
+<p>El apodo lo escribe la familia y puede ser cualquier cosa. No pedimos nombre real, apellido, correo, teléfono, dirección, foto ni fecha de nacimiento. Tampoco los necesitamos: no hay ninguna cuenta que crear.</p>
+<p>Desinstalar la app borra todo esto, porque no hay copia en ninguna otra parte: la copia de seguridad automática de Android está desactivada a propósito, así que el avance tampoco viaja a tu cuenta de Google. Dentro de la app, la Zona de Papás también permite borrar el avance.</p>
 <hr>
 <h2>Qué NO hace la app</h2>
-<ul><li><strong>No se conecta a internet.</strong> No hay ninguna petición a ningún servidor.</li><li><strong>No tiene publicidad</strong>, de ningún tipo ni de ninguna red.</li><li><strong>No tiene analítica ni rastreadores.</strong> No sabemos cuántas veces se abre la app, ni desde dónde, ni por quién.</li><li><strong>No hay compras para el niño.</strong> Las monedas del juego se ganan resolviendo desafíos y no se pueden comprar con dinero real.</li><li><strong>No usa inteligencia artificial.</strong> Hubo un chat con IA durante el desarrollo y se retiró antes de publicar; el diálogo de Gus está escrito a mano.</li><li><strong>No comparte, vende ni cede información a terceros.</strong> No hay información que compartir.</li></ul>
+<ul>
+<li>No se conecta a internet para funcionar: los desafíos, el avance y la voz salen del propio teléfono. La única conexión que existe es con Google Play, y solo por la suscripción. Servidores nuestros no hay ninguno.</li>
+<li>No tiene publicidad, de ningún tipo ni de ninguna red.</li>
+<li>No tiene analítica ni rastreadores. No sabemos cuántas veces se abre la app, ni desde dónde, ni por quién.</li>
+<li>No hay compras para el niño: las monedas del juego se ganan resolviendo desafíos y no se pueden comprar con dinero real.</li>
+<li>No usa inteligencia artificial. Hubo un chat con IA durante el desarrollo y se retiró antes de publicar; el diálogo de Gus está escrito a mano.</li>
+<li>No cede ni vende información a terceros. No hay información que ceder.</li>
+</ul>
+<hr>
+<h2>La suscripción</h2>
+<p>La app se puede usar sin pagar nada, y lo gratis es gratis para siempre. La suscripción opcional abre el resto de las islas, y quien la cobra es Google Play: nosotros no vemos ni recibimos tu tarjeta, ni tu nombre, ni tu dirección. No hay ningún pago que pase por nosotros.</p>
+<p>Para eso —y solo para eso— la app le pregunta a Google Play si hay una suscripción activa. Es la única petición de red que hace, no lleva ningún dato del niño ni de su avance, y si el teléfono está sin internet la app sigue funcionando igual.</p>
+<p>Gestionar o cancelar la suscripción se hace desde Google Play, no desde acá.</p>
 <hr>
 <h2>Permisos que pide la app</h2>
-<ul><li><strong>Huella o reconocimiento facial</strong> (opcional, se puede apagar): sirve para que un adulto abra la Zona de Papás sin escribir la multiplicación. Lo verifica el sistema operativo del teléfono; <strong>la app nunca ve ni guarda tu huella</strong>, solo recibe un &quot;sí&quot; o un &quot;no&quot;.</li><li><strong>Notificaciones</strong> (opcional, viene apagado): un único recordatorio diario que genera el propio teléfono. No pasa por ningún servidor.</li></ul>
-<p>La app <strong>no pide micrófono, ni cámara, ni ubicación, ni contactos, ni acceso a tus archivos.</strong></p>
+<ul>
+<li>Huella o reconocimiento facial (opcional, se puede apagar): sirve para que un adulto abra la Zona de Papás sin escribir la multiplicación. Lo verifica el sistema operativo del teléfono; la app nunca ve ni guarda tu huella, solo recibe un &quot;sí&quot; o un &quot;no&quot;.</li>
+<li>Notificaciones (opcional, viene apagado): un único recordatorio diario que genera el propio teléfono, sin pasar por ningún servidor.</li>
+</ul>
+<p>La app no pide micrófono, ni cámara, ni ubicación, ni contactos, ni acceso a tus archivos.</p>
 <hr>
 <h2>Lectura en voz alta</h2>
-<p>La app puede leer los textos en voz alta usando el motor de texto-a-voz que ya viene instalado en el teléfono. Lo único que se le entrega a ese motor son <strong>los textos de la propia app</strong> (los desafíos y los datos del Nido de Gus): nunca nada que el niño haya escrito. Ese motor es parte del sistema operativo y se rige por la política de privacidad del fabricante del teléfono.</p>
+<p>La app puede leer los textos en voz alta usando el motor de texto a voz que ya viene instalado en el teléfono. Lo único que se le entrega a ese motor son los textos de la propia app —los desafíos y los datos del Nido de Gus—: nunca nada que el niño haya escrito.</p>
+<p>Ese motor es parte del sistema operativo y se rige por la política de privacidad del fabricante del teléfono.</p>
 <hr>
 <h2>Niños</h2>
-<p>Cavila está pensada para niños y cumple con esa responsabilidad de la forma más simple posible: <strong>no recogiendo nada</strong>. No hay perfiles publicitarios, ni seguimiento entre aplicaciones, ni contenido generado por otros usuarios, ni forma de que un niño contacte con un desconocido dentro de la app.</p>
+<p>Cavila está pensada para niños y cumple con esa responsabilidad de la forma más simple posible: no recogiendo nada. No hay perfiles publicitarios, ni seguimiento entre aplicaciones, ni contenido generado por otros usuarios, ni forma de que un niño contacte con un desconocido dentro de la app.</p>
 <p>Las secciones para adultos (informe de avance, ajustes, suscripción) están detrás de una puerta que exige resolver una multiplicación o confirmar con la huella.</p>
 <hr>
 <h2>Cambios en esta política</h2>
-<p>Si alguna vez la app empezara a recoger algún dato, esta política se actualizaría <strong>antes</strong> de que eso ocurra, y el cambio se avisaría dentro de la app.</p>
+<p>Si alguna vez la app empezara a recoger algún dato, esta política se actualizaría antes de que eso ocurra, y el cambio se avisaría dentro de la app.</p>
 <hr>
 <h2>Contacto</h2>
-<p>Para cualquier duda sobre privacidad: <strong><a href="mailto:gustavo.gomez.galaz@gmail.com">gustavo.gomez.galaz@gmail.com</a></strong></p>
+<p>Para cualquier duda sobre privacidad, escribe a <a href="mailto:gustavo.gomez.galaz@gmail.com">gustavo.gomez.galaz@gmail.com</a>.</p>
+</article>
+<article lang="en" data-idioma="en" hidden>
+<h1>Privacy Policy — Cavila</h1>
+<p><strong>Last updated: 2026-08-16</strong></p>
+<p>Cavila is a puzzle app for children aged 6 and up. This policy explains what the app does with information.</p>
+<hr>
+<h2>The short version</h2>
+<p>Cavila does not collect any data. Nothing that happens inside the app leaves the phone. There are no accounts, no sign-up, no servers of ours, no ads and no analytics.</p>
+<p>The app works entirely in airplane mode, and that is not a coincidence: it is the reason there is nothing to collect. The only thing that needs a network is the optional subscription, which Google Play charges for.</p>
+<hr>
+<h2>What is stored, and where</h2>
+<p>Everything the app stores lives only on the phone itself and is never transmitted:</p>
+<ul>
+<li>Game progress (levels, stars, coins, streak, badges), so the child picks up where they left off.</li>
+<li>Each profile’s nickname and emoji, to tell apart siblings sharing a phone.</li>
+<li>The age range, which is optional, to adjust difficulty.</li>
+<li>Settings: sound, narration, language and reminder.</li>
+</ul>
+<p>The nickname is written by the family and can be anything. We do not ask for a real name, surname, email, phone number, address, photo or date of birth. We do not need them either: there is no account to create.</p>
+<p>Uninstalling the app deletes all of this, because there is no copy anywhere else: Android’s automatic backup is switched off on purpose, so progress does not travel to your Google account either. Inside the app, the Parents’ Area can also erase progress.</p>
+<hr>
+<h2>What the app does NOT do</h2>
+<ul>
+<li>It does not connect to the internet to work: the challenges, the progress and the voice all come from the phone itself. The only connection there is goes to Google Play, and only for the subscription. Servers of ours: none.</li>
+<li>It has no ads, of any kind or from any network.</li>
+<li>It has no analytics and no trackers. We do not know how many times the app is opened, from where, or by whom.</li>
+<li>There are no purchases for the child: in-game coins are earned by solving challenges and cannot be bought with real money.</li>
+<li>It does not use artificial intelligence. There was an AI chat during development and it was removed before release; Gus’s dialogue is written by hand.</li>
+<li>It does not hand over or sell information to third parties. There is no information to hand over.</li>
+</ul>
+<hr>
+<h2>The subscription</h2>
+<p>The app can be used without paying anything, and what is free is free forever. The optional subscription opens the remaining islands, and Google Play is who charges for it: we never see or receive your card, your name or your address. No payment passes through us.</p>
+<p>For that —and only for that— the app asks Google Play whether there is an active subscription. It is the only network request it makes, it carries no data about the child or their progress, and if the phone has no internet the app keeps working just the same.</p>
+<p>Managing or cancelling the subscription is done from Google Play, not from here.</p>
+<hr>
+<h2>Permissions the app asks for</h2>
+<ul>
+<li>Fingerprint or face recognition (optional, can be turned off): it lets an adult open the Parents’ Area without typing the multiplication. The phone’s operating system verifies it; the app never sees or stores your fingerprint, it only receives a &quot;yes&quot; or a &quot;no&quot;.</li>
+<li>Notifications (optional, off by default): a single daily reminder generated by the phone itself, without going through any server.</li>
+</ul>
+<p>The app does not ask for microphone, camera, location, contacts or access to your files.</p>
+<hr>
+<h2>Reading aloud</h2>
+<p>The app can read texts aloud using the text-to-speech engine already installed on the phone. The only thing handed to that engine is the app’s own text —the challenges and the facts in Gus’s Nest—: never anything the child has written.</p>
+<p>That engine is part of the operating system and is governed by the phone manufacturer’s privacy policy.</p>
+<hr>
+<h2>Children</h2>
+<p>Cavila is made for children and meets that responsibility in the simplest way possible: by collecting nothing. There are no advertising profiles, no cross-app tracking, no content generated by other users, and no way for a child to contact a stranger inside the app.</p>
+<p>The adult sections (progress report, settings, subscription) sit behind a gate that requires solving a multiplication or confirming with a fingerprint.</p>
+<hr>
+<h2>Changes to this policy</h2>
+<p>If the app were ever to start collecting any data, this policy would be updated before that happens, and the change would be announced inside the app.</p>
+<hr>
+<h2>Contact</h2>
+<p>For any privacy question, write to <a href="mailto:gustavo.gomez.galaz@gmail.com">gustavo.gomez.galaz@gmail.com</a>.</p>
+</article>
+<article lang="pt" data-idioma="pt" hidden>
+<h1>Política de Privacidade — Cavila</h1>
+<p><strong>Última atualização: 2026-08-16</strong></p>
+<p>Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta política explica o que o app faz com as informações.</p>
+<hr>
+<h2>O resumo</h2>
+<p>Cavila não recolhe nenhum dado. Nada do que acontece dentro do app sai do telefone. Não há contas, não há cadastro, não há servidores nossos, não há publicidade e não há análise de uso.</p>
+<p>O app funciona inteiro com o telefone em modo avião, e isso não é coincidência: é a razão pela qual não há nada a recolher. A única coisa que precisa de rede é a assinatura opcional, cobrada pelo Google Play.</p>
+<hr>
+<h2>O que é guardado, e onde</h2>
+<p>Tudo o que o app guarda vive apenas no armazenamento do próprio telefone e nunca é transmitido:</p>
+<ul>
+<li>O progresso do jogo (níveis, estrelas, moedas, sequência, medalhas), para que a criança continue de onde parou.</li>
+<li>O apelido e o emoji de cada perfil, para distinguir irmãos que dividem o telefone.</li>
+<li>A faixa etária, que é opcional, para ajustar a dificuldade.</li>
+<li>Os ajustes: som, narração, idioma e lembrete.</li>
+</ul>
+<p>O apelido é escrito pela família e pode ser qualquer coisa. Não pedimos nome real, sobrenome, e-mail, telefone, endereço, foto nem data de nascimento. Também não precisamos deles: não há nenhuma conta para criar.</p>
+<p>Desinstalar o app apaga tudo isso, porque não há cópia em nenhum outro lugar: o backup automático do Android está desativado de propósito, então o progresso também não viaja para a sua conta do Google. Dentro do app, a Área dos Pais também permite apagar o progresso.</p>
+<hr>
+<h2>O que o app NÃO faz</h2>
+<ul>
+<li>Não se conecta à internet para funcionar: os desafios, o progresso e a voz saem do próprio telefone. A única conexão que existe é com o Google Play, e só pela assinatura. Servidores nossos não há nenhum.</li>
+<li>Não tem publicidade, de nenhum tipo nem de nenhuma rede.</li>
+<li>Não tem análise de uso nem rastreadores. Não sabemos quantas vezes o app é aberto, nem de onde, nem por quem.</li>
+<li>Não há compras para a criança: as moedas do jogo se ganham resolvendo desafios e não podem ser compradas com dinheiro real.</li>
+<li>Não usa inteligência artificial. Houve um chat com IA durante o desenvolvimento e foi retirado antes de publicar; o diálogo do Gus é escrito à mão.</li>
+<li>Não repassa nem vende informações a terceiros. Não há informação a repassar.</li>
+</ul>
+<hr>
+<h2>A assinatura</h2>
+<p>O app pode ser usado sem pagar nada, e o que é grátis é grátis para sempre. A assinatura opcional abre as demais ilhas, e quem cobra é o Google Play: nós não vemos nem recebemos seu cartão, seu nome ou seu endereço. Nenhum pagamento passa por nós.</p>
+<p>Para isso —e só para isso— o app pergunta ao Google Play se há uma assinatura ativa. É a única requisição de rede que ele faz, não leva nenhum dado da criança nem do seu progresso, e se o telefone estiver sem internet o app continua funcionando igual.</p>
+<p>Gerenciar ou cancelar a assinatura é feito pelo Google Play, não por aqui.</p>
+<hr>
+<h2>Permissões que o app pede</h2>
+<ul>
+<li>Impressão digital ou reconhecimento facial (opcional, pode ser desligado): serve para um adulto abrir a Área dos Pais sem escrever a multiplicação. Quem verifica é o sistema operacional do telefone; o app nunca vê nem guarda sua digital, apenas recebe um &quot;sim&quot; ou um &quot;não&quot;.</li>
+<li>Notificações (opcional, vem desligado): um único lembrete diário gerado pelo próprio telefone, sem passar por nenhum servidor.</li>
+</ul>
+<p>O app não pede microfone, nem câmera, nem localização, nem contatos, nem acesso aos seus arquivos.</p>
+<hr>
+<h2>Leitura em voz alta</h2>
+<p>O app pode ler os textos em voz alta usando o motor de texto para fala já instalado no telefone. A única coisa entregue a esse motor são os textos do próprio app —os desafios e os fatos do Ninho do Gus—: nunca nada que a criança tenha escrito.</p>
+<p>Esse motor faz parte do sistema operacional e segue a política de privacidade do fabricante do telefone.</p>
+<hr>
+<h2>Crianças</h2>
+<p>Cavila é pensada para crianças e cumpre essa responsabilidade da forma mais simples possível: não recolhendo nada. Não há perfis publicitários, nem rastreamento entre aplicativos, nem conteúdo gerado por outros usuários, nem forma de uma criança entrar em contato com um desconhecido dentro do app.</p>
+<p>As seções para adultos (relatório de progresso, ajustes, assinatura) estão atrás de uma porta que exige resolver uma multiplicação ou confirmar com a digital.</p>
+<hr>
+<h2>Mudanças nesta política</h2>
+<p>Se algum dia o app começasse a recolher algum dado, esta política seria atualizada antes que isso acontecesse, e a mudança seria avisada dentro do app.</p>
+<hr>
+<h2>Contato</h2>
+<p>Para qualquer dúvida sobre privacidade, escreva para <a href="mailto:gustavo.gomez.galaz@gmail.com">gustavo.gomez.galaz@gmail.com</a>.</p>
+</article>
+<script>
+  var arts = document.querySelectorAll('[data-idioma]');
+  var btns = document.querySelectorAll('[data-ir]');
+  function mostrar(i) {
+    arts.forEach(function (a) { a.hidden = a.dataset.idioma !== i; });
+    btns.forEach(function (b) { b.setAttribute('aria-current', String(b.dataset.ir === i)); });
+    document.documentElement.lang = i;
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { mostrar(b.dataset.ir); }); });
+  // Arranca en el idioma del navegador si lo tenemos; si no, español.
+  var pref = (navigator.language || 'es').slice(0, 2);
+  mostrar(["es","en","pt"].indexOf(pref) >= 0 ? pref : 'es');
+</script>
 </body>
 </html>
