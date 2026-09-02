@@ -1,6 +1,6 @@
 # Política de Privacidade — Cavila
 
-**Última atualização: 2026-08-16**
+**Última atualização: 2026-09-02**
 
 Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta política explica o que o app faz com as informações.
 
@@ -11,6 +11,8 @@ Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta pol�
 Cavila não recolhe nenhum dado. Nada do que acontece dentro do app sai do telefone. Não há contas, não há cadastro, não há servidores nossos, não há publicidade e não há análise de uso.
 
 O app funciona inteiro com o telefone em modo avião, e isso não é coincidência: é a razão pela qual não há nada a recolher. A única coisa que precisa de rede é a assinatura opcional, cobrada pelo Google Play.
+
+Há uma ressalva que preferimos contar nós mesmos antes que você a leia na ficha da loja: dentro do app viaja uma biblioteca do Google que a Play nos obriga a declarar mesmo que não a usemos. Está explicada mais abaixo, em «A biblioteca de avisos».
 
 ---
 
@@ -59,6 +61,16 @@ O app não pede microfone, nem câmera, nem localização, nem contatos, nem ace
 
 ---
 
+## A biblioteca de avisos, e por que declaramos um identificador
+
+O lembrete diário opcional usa o componente de notificações do Android. Esse componente traz dentro uma biblioteca do Google —Firebase Cloud Messaging— que em outros aplicativos serve para receber mensagens enviadas de um servidor e que, para isso, registra um identificador do aparelho.
+
+O Cavila não usa essa função. Não há nenhum servidor nosso, o app nunca pede esse identificador e nem sequer existe o arquivo de configuração de que a biblioteca precisa para iniciar: ela não chega a se registrar. O aviso é montado inteiro dentro do telefone e funciona em modo avião.
+
+Ainda assim, o Google Play revisa o que um aplicativo CONTÉM e não o que ele usa, e por isso exige declarar "IDs de dispositivo ou outros" no seu formulário de segurança de dados. Nós declaramos, e explicamos aqui para que não haja surpresas: não pedimos esse identificador, não o vemos e ele não chega até nós.
+
+---
+
 ## Leitura em voz alta
 
 O app pode ler os textos em voz alta usando o motor de texto para fala já instalado no telefone. A única coisa entregue a esse motor são os textos do próprio app —os desafios e os fatos do Ninho do Gus—: nunca nada que a criança tenha escrito.
@@ -83,4 +95,4 @@ Se algum dia o app começasse a recolher algum dado, esta política seria atuali
 
 ## Contato
 
-Para qualquer dúvida sobre privacidade, escreva para gustavo.gomez.galaz@gmail.com.
+Para qualquer dúvida sobre privacidade, escreva para contacto@gusmarstudios.com.

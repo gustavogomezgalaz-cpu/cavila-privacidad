@@ -1,6 +1,6 @@
 # Privacy Policy — Cavila
 
-**Last updated: 2026-08-16**
+**Last updated: 2026-09-02**
 
 Cavila is a puzzle app for children aged 6 and up. This policy explains what the app does with information.
 
@@ -11,6 +11,8 @@ Cavila is a puzzle app for children aged 6 and up. This policy explains what the
 Cavila does not collect any data. Nothing that happens inside the app leaves the phone. There are no accounts, no sign-up, no servers of ours, no ads and no analytics.
 
 The app works entirely in airplane mode, and that is not a coincidence: it is the reason there is nothing to collect. The only thing that needs a network is the optional subscription, which Google Play charges for.
+
+There is one caveat we would rather tell you ourselves before you read it on the store listing: a Google library ships inside the app that Play requires us to declare even though we do not use it. It is explained below, under "The notification library".
 
 ---
 
@@ -59,6 +61,16 @@ The app does not ask for microphone, camera, location, contacts or access to you
 
 ---
 
+## The notification library, and why we declare an identifier
+
+The optional daily reminder uses Android’s notification component. That component bundles a Google library —Firebase Cloud Messaging— which in other apps is used to receive messages sent from a server and which, in order to do so, registers a device identifier.
+
+Cavila does not use that feature. There is no server of ours, the app never asks for that identifier, and the configuration file the library needs in order to start does not even exist: it never registers. The reminder is built entirely inside the phone and works in airplane mode.
+
+Even so, Google Play reviews what an app CONTAINS rather than what it uses, and therefore requires declaring "Device or other IDs" in its data safety form. We declare it, and we explain it here so there are no surprises: we do not request that identifier, we do not see it, and it never reaches us.
+
+---
+
 ## Reading aloud
 
 The app can read texts aloud using the text-to-speech engine already installed on the phone. The only thing handed to that engine is the app’s own text —the challenges and the facts in Gus’s Nest—: never anything the child has written.
@@ -83,4 +95,4 @@ If the app were ever to start collecting any data, this policy would be updated 
 
 ## Contact
 
-For any privacy question, write to gustavo.gomez.galaz@gmail.com.
+For any privacy question, write to contacto@gusmarstudios.com.
