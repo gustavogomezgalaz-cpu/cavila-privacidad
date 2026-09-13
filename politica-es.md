@@ -54,7 +54,7 @@ Gestionar o cancelar la suscripción se hace desde Google Play, no desde acá.
 
 ## Permisos que pide la app
 
-- Huella o reconocimiento facial (opcional, se puede apagar): sirve para que un adulto abra la Zona de Papás sin escribir la multiplicación. Lo verifica el sistema operativo del teléfono; la app nunca ve ni guarda tu huella, solo recibe un "sí" o un "no".
+- Huella o reconocimiento facial (opcional, se puede apagar): sirve para que un adulto abra la Zona de Papás sin tocar los números. Lo verifica el sistema operativo del teléfono; la app nunca ve ni guarda tu huella, solo recibe un "sí" o un "no".
 - Notificaciones (opcional, viene apagado): un único recordatorio diario que genera el propio teléfono, sin pasar por ningún servidor.
 
 La app no pide micrófono, ni cámara, ni ubicación, ni contactos, ni acceso a tus archivos.
@@ -83,7 +83,7 @@ Ese motor es parte del sistema operativo y se rige por la política de privacida
 
 Cavila está pensada para niños y cumple con esa responsabilidad de la forma más simple posible: no recogiendo nada. No hay perfiles publicitarios, ni seguimiento entre aplicaciones, ni contenido generado por otros usuarios, ni forma de que un niño contacte con un desconocido dentro de la app.
 
-Las secciones para adultos (informe de avance, ajustes, suscripción) están detrás de una puerta que exige resolver una multiplicación o confirmar con la huella.
+Las secciones para adultos (informe de avance, ajustes, suscripción) están detrás de una puerta que exige tocar el número más grande o confirmar con la huella.
 
 ---
 

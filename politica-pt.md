@@ -54,7 +54,7 @@ Gerenciar ou cancelar a assinatura é feito pelo Google Play, não por aqui.
 
 ## Permissões que o app pede
 
-- Impressão digital ou reconhecimento facial (opcional, pode ser desligado): serve para um adulto abrir a Área dos Pais sem escrever a multiplicação. Quem verifica é o sistema operacional do telefone; o app nunca vê nem guarda sua digital, apenas recebe um "sim" ou um "não".
+- Impressão digital ou reconhecimento facial (opcional, pode ser desligado): serve para um adulto abrir a Área dos Pais sem tocar nos números. Quem verifica é o sistema operacional do telefone; o app nunca vê nem guarda sua digital, apenas recebe um "sim" ou um "não".
 - Notificações (opcional, vem desligado): um único lembrete diário gerado pelo próprio telefone, sem passar por nenhum servidor.
 
 O app não pede microfone, nem câmera, nem localização, nem contatos, nem acesso aos seus arquivos.
@@ -83,7 +83,7 @@ Esse motor faz parte do sistema operacional e segue a política de privacidade d
 
 Cavila é pensada para crianças e cumpre essa responsabilidade da forma mais simples possível: não recolhendo nada. Não há perfis publicitários, nem rastreamento entre aplicativos, nem conteúdo gerado por outros usuários, nem forma de uma criança entrar em contato com um desconhecido dentro do app.
 
-As seções para adultos (relatório de progresso, ajustes, assinatura) estão atrás de uma porta que exige resolver uma multiplicação ou confirmar com a digital.
+As seções para adultos (relatório de progresso, ajustes, assinatura) estão atrás de uma porta que exige tocar no maior número ou confirmar com a digital.
 
 ---
 
