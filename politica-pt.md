@@ -1,8 +1,8 @@
 # Política de Privacidade — Cavila
 
-**Última atualização: 2026-10-01**
+**Última atualização: 2026-10-15**
 
-Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta política explica o que o app guarda no telefone, que dados de uso e de falhas ele envia, para quê e por quanto tempo são guardados. Revisão de 1º de outubro de 2026: o app passou a usar o Google Analytics para Firebase e o Firebase Crashlytics, em modo infantil.
+Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta política explica o que o app guarda no telefone, que dados de uso e de falhas ele envia, para quê e por quanto tempo são guardados. Revisão de 15 de outubro de 2026: pagar não passa mais pela porta dos adultos, e a política detalha o que se mede quando uma compra não se completa (veja «Mudanças nesta política»).
 
 ---
 
@@ -10,7 +10,7 @@ Cavila é um aplicativo de enigmas para crianças a partir dos 6 anos. Esta pol�
 
 Não há contas nem cadastro, não pedimos o nome da criança nem nenhum dado de contato, não há publicidade e não há chat. O progresso da criança e os perfis ficam guardados no telefone.
 
-Para saber quantas famílias instalam o Cavila, de qual app irmão ou anúncio nosso elas vêm, que partes usam e o que compram, o app envia dados de uso ao Google Analytics para Firebase, sem nomes e sem o identificador de publicidade do telefone. E, se o app fechar por um erro, o Firebase Crashlytics envia um relatório técnico para podermos corrigi-lo. As duas coisas estão explicadas uma por uma em «Estatísticas e falhas».
+Para saber quantas famílias instalam o Cavila, de qual app irmão ou anúncio nosso elas vêm, que partes usam e o que compram, o app envia dados de uso ao Google Analytics para Firebase, sem nomes e sem o identificador de publicidade do telefone. E, se o app fechar por um erro, ou se uma compra com o Google Play não for concluída (por um erro, porque o tempo acabou ou porque foi cancelada), o Firebase Crashlytics envia um relatório técnico para podermos corrigi-lo. As duas coisas estão explicadas uma por uma em «Estatísticas e falhas».
 
 O jogo funciona inteiro com o telefone em modo avião: os desafios, o progresso e a voz saem do próprio telefone. Sem conexão, os dados de uso podem esperar e ser enviados depois. Para jogar não é preciso rede; para pagar o Premium, cobrado pelo Google Play, sim.
 
@@ -43,12 +43,14 @@ O que é enviado:
 - Quando o app é aberto e quanto tempo é usado, e a primeira vez que ele é aberto.
 - O modelo do telefone, o idioma dele e as versões do Android e do app.
 - Uma localização aproximada (o país ou a cidade), que o Google deduz do endereço IP. Não há localização precisa nem permissão de localização.
-- Se a instalação veio de um link nosso —outro app da família ou um anúncio nosso—, o nome desse link (como «promo-matibu»). O app o lê do «install referrer» do Google Play, fica só com esse nome e descarta o resto, inclusive o identificador do clique.
+- Se a instalação veio de um link nosso —outro app da família ou um anúncio nosso—, o nome desse link (como «promo-matibu»). O app o lê do «install referrer» do Google Play, fica só com esse nome e descarta o resto, inclusive o identificador do clique. À parte, o Google Analytics lê esse mesmo dado por conta própria na primeira vez que o app é aberto, para saber de qual campanha veio a instalação.
 - O idioma do app e se ele está no plano grátis ou em qual plano pago.
-- Uma lista fechada de fatos de uso: que as boas-vindas terminaram ou foram puladas; que um nível terminou, de qual ilha e com quantas estrelas; que uma ilha ou o desafio do dia terminou; que o teste de 3 dias do Farol do Critério abriu ou fechou; que um limite do plano grátis foi atingido (os perfis ou o relatório); a entrada na Área dos Pais e a passagem pela porta dos adultos; os cadeados tocados e de qual tela; a tela de planos, o plano escolhido e se a compra começou, falhou ou foi restaurada; que uma avaliação no Google Play foi pedida; e qual outro app da família foi visto ou tocado na Área dos Pais.
-- Se um adulto compra o Premium: o plano, o preço e a moeda. Nenhum dado de pagamento.
+- Uma lista fechada de fatos de uso: que as boas-vindas terminaram ou foram puladas; que um nível terminou, de qual ilha e com quantas estrelas; que uma ilha ou o desafio do dia terminou; que o teste de 3 dias do Farol do Critério abriu ou fechou; que um limite do plano grátis foi atingido (os perfis ou o relatório); a entrada na Área dos Pais e a passagem pela porta dos adultos (se foi passada, se a digital respondeu ou se foi tocado um número errado; nunca a digital nem o número); os cadeados tocados e de qual tela; a tela de planos, o plano escolhido, como ela foi fechada e depois de quantos segundos, e se a compra começou, falhou ou foi restaurada; que uma avaliação no Google Play foi pedida; e qual outro app da família foi visto ou tocado na Área dos Pais.
+- Se um adulto compra o Premium: o plano, o preço e a moeda, e se o pagamento foi confirmado mais tarde (por exemplo, um pagamento em dinheiro). Nenhum dado de pagamento.
+- Se uma compra não se completou: o motivo e o código que o Google Play deu (por exemplo, que foi cancelada, que o tempo acabou ou que o pagamento foi recusado por falta de saldo) e em que passo da compra aconteceu.
+- Ao carregar os planos: se foi possível trazer os preços do Google Play, se o app foi instalado pelo Google Play ou por outra fonte, e se roda em um aparelho de testes do Google (Firebase Test Lab). Serve para separar os testes automáticos das famílias de verdade.
 
-Se o app fechar por um erro, o Firebase Crashlytics envia um relatório técnico: o rastro do erro, o modelo do telefone, as versões do Android e do app e a hora. Sem nenhum dado da criança.
+Se o app fechar por um erro, o Firebase Crashlytics envia um relatório técnico: o rastro do erro, o modelo do telefone, as versões do Android e do app e a hora. Sem nenhum dado da criança. Além disso, quando uma compra ou uma consulta ao Google Play falha por um erro da loja, o Crashlytics recebe um relatório mesmo que o app não feche, com o código e a mensagem que o Google Play deu, o passo da compra, o produto e o plano; ele também não leva nada da criança.
 
 O que nunca vai nesses dados: o apelido ou o emoji de um perfil, a idade ou a faixa etária, as respostas aos desafios, nada que se escreva no app nem o identificador de publicidade. Cada evento tem uma lista fechada de valores permitidos, e o que não está nessa lista é descartado antes de sair; um teste automático do código vigia isso em cada versão.
 
@@ -61,7 +63,7 @@ Para quê: para saber quantas famílias instalam o app e continuam, que partes s
 - Não tem publicidade, de nenhum tipo nem de nenhuma rede, e não há perfis publicitários nem rastreamento entre aplicativos.
 - Não há contas, cadastro nem login, e não há servidores nossos: os dados de uso vão para o Firebase, que é do Google.
 - Não há chat, nem conteúdo de outros usuários, nem forma de a criança escrever para alguém ou receber mensagens.
-- Não há compras para a criança: as moedas do jogo se ganham resolvendo desafios e não podem ser compradas com dinheiro real. Tudo o que se paga fica atrás da porta dos adultos.
+- Não há itens à venda dentro do jogo: as moedas se ganham resolvendo desafios e não podem ser compradas com dinheiro real. A única coisa paga é o Premium, e nenhum pagamento acontece sem a janela do Google Play, que mostra o preço e pede para confirmar.
 - Não usa inteligência artificial. Houve um chat com IA durante o desenvolvimento e foi retirado antes de publicar; o diálogo do Gus é escrito à mão.
 - Não vende informações a ninguém.
 
@@ -73,7 +75,9 @@ O app pode ser usado sem pagar nada. O Premium, que é opcional, abre o restante
 
 Para saber se há acesso Premium, o app pergunta ao Google Play se há uma assinatura ativa ou um passe comprado. Essa consulta não leva nenhum dado da criança nem do seu progresso, e se o telefone estiver sem conexão o jogo continua funcionando igual. Quando um adulto compra, a análise de uso registra o plano, o preço e a moeda (veja «Estatísticas e falhas»), nunca dados do cartão.
 
-Gerenciar ou cancelar a assinatura é feito pelo Google Play, não por aqui.
+Sem compras surpresa: a tela de planos abre sem a porta dos adultos, mas nada é cobrado sem a janela de pagamento do Google Play, que mostra o preço e pede para confirmar. Se seu filho usa o telefone sozinho, nas configurações do Google Play você pode exigir sua senha ou sua digital para cada compra, ou usar o Google Family Link.
+
+Gerenciar ou cancelar a assinatura é feito pelo Google Play, não por aqui. Restaurar uma compra continua na Área dos Pais, atrás da porta dos adultos.
 
 ---
 
@@ -108,7 +112,7 @@ Esse motor faz parte do sistema operacional e segue a política de privacidade d
 
 O Cavila é pensado para crianças e segue as políticas do Google Play para famílias. Não coletamos o nome da criança, nem o e-mail, nem a localização precisa, nem a idade: a análise de uso mede como o app é usado com um número de instalação aleatório, sem saber quem o usa, e o progresso dela fica no telefone. Não há publicidade, nem perfis publicitários, nem rastreamento entre aplicativos, nem conteúdo gerado por outros usuários, nem forma de uma criança entrar em contato com um desconhecido dentro do app.
 
-As seções para adultos —o relatório, os ajustes, os planos e tudo o que se paga— ficam atrás de uma porta que exige tocar no maior número ou confirmar com a digital.
+As seções para adultos —o relatório, os ajustes e restaurar uma compra— ficam atrás de uma porta que exige tocar no maior número ou confirmar com a digital. A tela de planos não tem essa porta, mas nenhum pagamento acontece sem a janela do Google Play (veja «A cobrança»).
 
 ---
 
@@ -122,7 +126,7 @@ O que já foi enviado ao Firebase não se apaga ao desinstalar, mas expira sozin
 
 ## Mudanças nesta política
 
-Se alguma versão futura mudar algo disto, este texto e a data acima são atualizados antes que essa versão chegue ao Google Play. A revisão de 1º de outubro de 2026 acrescentou o Google Analytics para Firebase e o Firebase Crashlytics, que o app não usava antes.
+Se alguma versão futura mudar algo disto, este texto e a data acima são atualizados antes que essa versão chegue ao Google Play. A revisão de 1º de outubro de 2026 acrescentou o Google Analytics para Firebase e o Firebase Crashlytics, que o app não usava antes. A de 15 de outubro de 2026 acrescentou que pagar não passa mais pela porta dos adultos, o motivo de uma compra que não se completa, o carregamento dos preços do Google Play junto com a fonte da instalação e o aparelho de testes, os erros da loja enviados ao Crashlytics e que o Google Analytics lê por conta própria o link da instalação. O que se coleta é o mesmo: só está mais bem explicado.
 
 ---
 
